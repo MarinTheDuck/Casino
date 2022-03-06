@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casino.Slots"
+             Title="Slots"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <StackLayout Margin="20" Spacing="10">
+        <Label Text="Klasični Slots! Skupite po 3 sumbola da dobijete: [💎] - 5x ulog, [💲] - 2x ulog. Po 3 od svih drugih simbola daje 1.5x ulog"
+                FontSize="Default"/>
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Stanje Računa"
+               x:Name="Money"
+               FontSize="Title"
+               />
+            <Label Text="Vaš ulog:" FontSize="Title"/>
+            <Entry Placeholder="Broj GOGI Coina koje ulažete." x:Name="Ulog"/>
+        </StackLayout>
+
+        <Button Text="Roll! 🎰" Padding="10" FontSize="Medium" FontAttributes="Bold" Clicked="Roll_Button_Clicked"></Button>
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Slots: [] [] []" FontSize="Title" x:Name="Rolled" TextColor="SlateBlue" FontAttributes="Bold"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casino.Matematika"
+             Title="Matematika"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    <StackLayout Margin="20" Spacing="10">
+        <Label Text="U igri matematika, dobiti ćete izraz, te je vaš cilj da odretite koji je rezultat koji je Gordan dobio. Ako imate isti rezultat kao Gordan dobivate 4x ulog."
+                FontSize="Default"/>
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Stanje Računa"
+               x:Name="Money"
+               FontSize="Title"
+               />
+            <Label Text="Vaš ulog:" FontSize="Title"/>
+            <Entry Placeholder="Broj GOGI Coina koje ulažete." x:Name="Ulog"/>
+        </StackLayout>
+
+        <StackLayout Margin="10" Spacing="5">
+            <Label Text="Izraz: []"
+               x:Name="Izraz"
+               FontSize="Title"
+               />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Vaš odgovor:" FontSize="Title" TextColor="Firebrick"/>
+                <Entry Placeholder="Odgovor" x:Name="Rezultat"/>
+            </StackLayout>
+        </StackLayout>
+
+        <Button Text="Provjeri rezultat! 🔢" Padding="10" FontSize="Medium" FontAttributes="Bold" x:Name="Provjeri" Clicked="Provjeri_Button_Clicked"></Button>
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Gordan kaže:" FontSize="Title" TextColor="SlateBlue" FontAttributes="Bold" x:Name="Gout"/>
+            <Image Source="nog.png" WidthRequest="300" ></Image>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

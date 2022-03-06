@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casino.Games"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+
+    <StackLayout Margin="30" Spacing="15">
+        <Label Text="Casino Gogs"
+               FontSize="Header"
+               TextColor="{DynamicResource SecondaryColor}"
+               />
+        <Label Text="Dobar dan!"
+               x:Name="Title"
+               FontSize="Title"
+               FontAttributes="Bold"
+               />
+        <Label Text="Stanje Računa"
+               x:Name="Money"
+               FontSize="Title"
+               />
+
+        <StackLayout Margin="30" Spacing="20">
+            <Label Text="Igre:"
+               FontSize="Medium"
+               FontAttributes="Bold"/>
+            <Button Text="Kockanje" Padding="16" FontSize="Medium" FontAttributes="Bold" Clicked="Kockanje_Button_Clicked"></Button>
+            <Button Text="Slots" Padding="16" FontSize="Medium" FontAttributes="Bold" Clicked="Slots_Button_Clicked"></Button>
+            <Button Text="Bacanje Novčića" Padding="16" FontSize="Medium" FontAttributes="Bold" Clicked="BacanjeNovcica_Button_Clicked"></Button>
+            <Button Text="Matematika" Padding="16" FontSize="Medium" FontAttributes="Bold" Clicked="Matematika_Button_Clicked"></Button>
+        </StackLayout>
+
+        <Label Text="Napravili Marin Zorić i Edi Žokalj."
+               FontSize="Medium"
+               VerticalTextAlignment="End"
+               HorizontalTextAlignment="End"
+               />
+    </StackLayout>
+    
+</ContentPage>

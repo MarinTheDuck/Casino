@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casino.BacanjeNovcica"
+             Title="Bacanje Novčića"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+    
+    <StackLayout Margin="20" Spacing="10">
+        <Label Text="Bacanje novčića funkcionira tako da kažete hoće li novčić pasti na glavu ili pismo, ako pogodite dobijete 1.5x svog uloga"
+                FontSize="Default"/>
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Stanje Računa"
+               x:Name="Money"
+               FontSize="Title"
+               />
+            <Label Text="Vaš ulog:" FontSize="Title"/>
+            <Entry Placeholder="Broj GOGI Coina koje ulažete." x:Name="Ulog"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Pasti će Glava? 🗣" Padding="10" FontSize="Medium" FontAttributes="Bold" Clicked="Glava_Button_Clicked"></Button>
+            <Button Text="Pasti će Pismo? 📧" Padding="10" FontSize="Medium" FontAttributes="Bold" Clicked="Pismo_Button_Clicked"></Button>
+        </StackLayout>
+
+        <StackLayout Margin="20" Spacing="10">
+            <Label Text="Novčić: " FontSize="Title" TextColor="SlateBlue" FontAttributes="Bold" x:Name="Novcic"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Casino.MainPage"
+             BackgroundColor="{DynamicResource BackgroundColor}">
+
+    <StackLayout Margin="50" Spacing="10">
+        <Label Text="Login" FontSize="Header" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+        <Label Text="Username:" FontSize="Title" Padding="10"/>
+        <Entry Placeholder="Enter your name" x:Name="UsernameInput"/>
+
+
+        <Label Text="Password:" FontSize="Title" Padding="10"/>
+        <Entry Placeholder="Enter your password" x:Name="PasswordInput"/>
+
+        <Button Text="Login" Padding="16" FontSize="Medium" Clicked="Login_Button_Clicked" FontAttributes="Bold"></Button>
+        <Button Text="Register" BackgroundColor="{DynamicResource ColorA}" Clicked="Register_Button_Clicked"></Button>
+    </StackLayout>
+    
+</ContentPage>
